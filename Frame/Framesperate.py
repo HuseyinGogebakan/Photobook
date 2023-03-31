@@ -4,7 +4,7 @@ import cv2
 cap = cv2.VideoCapture('video.mp4')
 
 # Set frame rate
-fps = 24
+fps = float(input("enter the frame rate please"))
 cap.set(cv2.CAP_PROP_FPS, fps)
 
 # Set frame count and time limit
@@ -21,7 +21,7 @@ while (cap.isOpened()):
         break
 
     # Save frame to file
-    cv2.imwrite(f"frame_{frame_count}.jpg", frame)
+    cv2.imwrite(f"storage/frame_{frame_count}.jpg", frame)
 
     # Increment frame count
     frame_count += 1
