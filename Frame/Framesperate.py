@@ -1,6 +1,6 @@
 import cv2
 
-# Open video file
+# Open video filea
 cap = cv2.VideoCapture('video.mp4')
 
 # Set frame rate
